@@ -1,0 +1,97 @@
+f<!doctype html>
+
+<head>
+    <title> cam\CREATE </title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <style>
+        #mona_lisa {
+            background-color: darkgreen;
+        }
+
+        #mona_lisa img {
+            max-width: 27em;
+        }
+
+        #wave {
+            background-color: darkblue;
+        }
+
+        #wave img {
+            max-width: 28em;
+        }
+
+        #pearl_earring {
+            background-color: orange;
+        }
+
+        #pearl_earring img {
+            max-width: 27em;
+        }
+
+        #gallery.subtitle {
+            padding: 10px;
+            font-family: Futura;
+            color: darkblue;
+            font-size: 1.4em;
+        }
+
+        #gallery.imgTable {
+            margin: 75px;
+        }
+    </style>
+</head>
+
+<body id="zeroMargin">
+    <div id="yellow_line">
+        <h1 id="heading" class="navbar"><b>GALLERY</b></h1>
+        <a id="heading" href="index.html">Home</a>
+    </div>
+    <p id="gallery" class="subtitle">
+        Here is a selection of some of Cameron's favorite creations he has made
+        from Lego.
+    </p>
+    <!--example of inline style here (line below)-->
+    <table style="margin: 75px" class="imgTable">
+        <tr>
+            <td id="caption1" class="imgTable">
+                <div class="caption">
+                    Right: An original adaptation of Da Vinci's "Mona Lisa". She's actually
+                    looking at you now!
+                </div>
+            </td>
+            <td id="mona_lisa">
+                <img src="mona_lisa.jpg" alt="image should be here"></img>
+            </td>
+        </tr>
+        <tr>
+            <td id="wave">
+                <img src="wave.jpg" alt="image should be here"></img>
+            </td>
+            <td>
+                <div class="caption">
+                    Left: A reproduction of "The Great Wave off Kanagawa" by Katsushika Hokusai
+                    from the 19th Century.
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="caption">
+                    Right: A reproduction of "Girl with a Pearl Earring" by Johannes Vermeer,
+                    1665. Sadly there's no pearl Lego pieces, so we had
+                    to get creative and tack on an actual earring.
+                </div>
+            </td>
+            <td id="pearl_earring">
+                <img src="pearl_earring.jpg" alt="image should be here"></img>
+            </td>
+        </tr>
+    </table>
+    <p id="credit" class="caption">
+        As said on previous page, all these Lego creations are actually by Natan
+        Sawaya!
+    </p>
+</body>
+
+</html>

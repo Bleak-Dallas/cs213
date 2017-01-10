@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Week10</title>
+    <script type="text/javascript" src="week10.js"></script>
+    <style>
+        #pageHeading{
+            text-align: center;
+            margin: auto;
+        }
+        #loadJSON {
+            float: right;
+            margin-right: 20%;
+        }
+        #cities {
+            float: left;
+            margin-left: 20%;
+        }
+    </style>
+
+</head>
+<body>
+<title>Week 10</title>
+<h1 id="pageHeading">Week 10: AJAX</h1>
+<div id="cities">
+    <h2>Ten Largest Cities</h2>
+    <div>
+        <form>
+            <select name="country" oninput="loadDoc(this.value)">
+                <option>Please choose a country:</option>
+                <option value="usa.txt">United States</option>
+                <option value="canada.txt">Canada</option>
+                <option value="mexico.txt">Mexico</option>
+                <option value="russia.txt">Russia</option>
+            </select>
+        </form>
+    </div>
+    <div>
+        <pre id="cityData"></pre>
+    </div>
+</div>
+<div id="loadJSON">
+    <h2>JSON File</h2>
+    <input type="text" id="fileInput"/><br/>
+    <button id="buttonJSON" onclick="openJSON()">Load</button>
+        <pre id="dataJSON"></pre>
+</div>
+
+</div>
+
+</body>
+</html>

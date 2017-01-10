@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/dist/week07/Week07 copy.js" />
+      <root url="file://$PROJECT_DIR$/dist/week06/week06.js" />
+      <root url="file://$PROJECT_DIR$/dist/babel-register/lib/browser.js" />
+      <root url="file://$PROJECT_DIR$/dist/babel-register/lib/node.js" />
+      <root url="file://$PROJECT_DIR$/dist/babel-register/lib/cache.js" />
+      <root url="file://$PROJECT_DIR$/dist/gulpfile.babel.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/week07/Week07 copy.js" />
+      <root url="file://$PROJECT_DIR$/dist/week07/Week07.js" />
+      <root url="file://$PROJECT_DIR$/dist/week07/Week07.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

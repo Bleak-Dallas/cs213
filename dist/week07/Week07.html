@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Luscious Lobster</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script type="text/javascript" src="Week07.js"></script>
+</head>
+<body onpageshow="initializeQuantity(); initializeCost()">
+<img id="logo" src="lobster_logo.jpg">
+<div id="nav">
+    <div id="nav_wrapper">
+        <ul>
+            <li>
+                <a href="javascript:show('Home', 'Shop', 'Checkout', 'Receipt')">Home</a>
+            </li>
+            <li>
+                <a href="javascript:show('Shop', 'Home', 'Checkout', 'Receipt')">Shop</a>
+            </li>
+            <li>
+                <a href="javascript:show('Checkout', 'Shop', 'Home', 'Receipt'); updateCart()">Cart</a>
+            </li>
+        </ul>
+    </div>
+    <!-- Nav wrapper end -->
+</div>
+<!-- Nav end -->
+<div id="Home" style="display: block">
+
+    <article>
+        <h1>Catch of the Week</h1>
+        5 December 2016
+        <p><img style="max-width: 100%" src="caughtLobster.jpg"></p>
+        <section>
+            This week our team is off the coast of Maine and they’re catching
+            American Lobster, <i>Homarus
+            americanus</i>.
+            Andy is one of our best fisherman and he loves to catch lobster. His
+            favorite thing to do to help pass
+            the time is to pick the best looking lobster and give it a name.
+            This was a particularly sunny day for
+            off the coast of Maine and this big guy was named Johnny Karate
+            because he kept karate chopping his
+            nearby friends. He weighed in at 27 pounds and was 13 inches long.
+        </section>
+        <section>
+            <h4> More about the American Lobster </h4>
+            It can reach a body length of 64 cm (25 in), and a mass of over 20
+            kilograms (44 lb), making it not only the heaviest crustacean in the
+            world, but also the heaviest of all
+            living arthropod species. American lobsters are usually bluish green
+            to brown with red spines, but
+            several color variations have been
+            observed.
+        </section>
+    </article>
+    <aside>
+        <h2>Events</h2>
+        <h3>Fresh Lobster Giveaway </h3>
+        <p>
+            <b><i>Dec 5 - Dec 12</i></b> -- We’re giving away Johnny Karate. We
+            couldn’t resist sharing him with the
+            world. He’s just that good at what he does. Johnny is an American
+            Lobster and he actually is quite good at
+            karate. He was caught on December 5 2016. He weighed in at 27 pounds
+            and was 13 inches long. To enter this
+            giveaway head on over to our Instagram, Luscious Lobster and follow
+            us and like the post. For additional
+            entries tag your friends in a comment, and share repost the photo
+            using <i>#johnnykaratethelobster</i>. The
+            giveaway
+            will run from today until Dec 12 at midnight. Winner will be
+            announced monday morning on our website and on
+            Instagram.
+        </p>
+
+        <h3>Join Us On The Boat To Learn About Lobster Fishing </h3>
+        <p>Join us every Tuesday in the month of November. We will be
+            picking 1-2 people to come with us on our lobster fishing boat to
+            watch the fishermen bring up the lobster
+            pots. We will tell you all about the pots and how they were loaded
+            that morning and dropped into the ocean.
+            Cameron, our owner and master fisherman will talk you through
+            everything it takes to be a fisherman and all
+            of the opportunities we have for you to join us on excursions. Due
+            to strict regulations you will only be
+            watching, as lobster licenses are tricky to come by. Please email <a
+                    href="mailto:cameron@lusciouslobster.com?Subject=GIMME%20LOBSTER"
+                    target="_top">cameron@lusciouslobster.com</a>
+            with your
+            interest in this event.
+        </p>
+    </aside>
+</div>
+<div id="Shop" style="display: none">
+    <form>
+        <table>
+            <tr>
+                <th style="text-align: center; font-size: 150%;">Today's catch,
+                    arriving at your door tomorrow.
+                </th>
+            </tr>
+            <tr>
+                <td class="description">
+                    <br/>
+                    <img src="liveAmericanLobster.jpg"/>
+                    <h3>Live American Lobster</h3>
+                    $65.00 <br/>
+                    <span>Quantity desired:</span><br/>
+                    <input type="number" size="2"
+                           onfocus="showButton('button1')"
+                           oninput="setQuantity(this.value, 'liveAmerican'); updateCart()"/>
+                    <button type="button" id="button1"
+                            onclick="show('Checkout', 'Shop', 'Home', 'Receipt');"/>
+                    Go to Checkout
+                    </button>
+
+                    <p>
+                        Your live American Lobster will arrive at your door
+                        alive and pinching. It will come in a cooler
+                        with damp cloths to help keep the lobster moist, yet
+                        still able to breathe. We have a guarantee
+                        that it will arrive to you alive and still breathing.
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="description">
+                    <img src="liveRockLobster.jpg"/>
+                    <h3>Live Rock Lobster</h3>
+                    $45.00 <br/>
+                    <span>Quantity desired:</span><br/>
+                    <input type="number" size="2"
+                           onfocus="showButton('button2')"
+                           oninput="setQuantity(this.value, 'liveRock'); updateCart()"/>
+                    <button type="button" id="button2"
+                            onclick="show('Checkout', 'Shop', 'Home', 'Receipt');"/>
+                    Go to Checkout
+                    </button>
+
+                    <p>
+                        Your live Rock Lobster will arrive at your door alive
+                        and pinching. It will come in a cooler
+                        with damp cloths to help keep the lobster moist, yet
+                        still able to breathe. We have a guarantee that it
+                        will arrive to you alive and still breathing.
+                    <p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="description">
+                    <img src="tailAmericanLobster.jpg"/>
+                    <h3>American Lobster Tail</h3>
+                    $25.00 <br/>
+                    <span>Quantity desired:</span><br/>
+                    <input type="number" size="2"
+                           onfocus="showButton('button3')"
+                           oninput="setQuantity(this.value, 'tailAmerican'); updateCart()"/>
+                    <button type="button" id="button3"
+                            onclick="show('Checkout', 'Shop', 'Home', 'Receipt');"/>
+                    Go to Checkout
+                    </button>
+
+                    <p>
+                        This fresh American lobster tail will arrive fresh with
+                        a guarantee that it was never previously
+                        frozen. We only ship today’s catch to ensure the best
+                        tasting lobster you’ve ever had. It will
+                        come in a chilled cooler ready to be grilled, baked, or
+                        fried!
+                    </p>
+                </td>
+            <tr>
+                <td class="description">
+                    <img src="tailRockLobster.jpg"/>
+                    <h3>Rock Lobster Tail</h3>
+                    $17.00<br/>
+                    <span>Quantity desired:</span><br/>
+                    <input type="number" size="2"
+                           onfocus="showButton('button4')"
+                           oninput="setQuantity(this.value, 'tailRock'); updateCart()"/>
+                    <button type="button" id="button4"
+                            onclick="show('Checkout', 'Shop', 'Home', 'Receipt');"/>
+                    Go to Checkout
+                    </button>
+
+                    <p>
+                        This fresh Rock lobster tail will arrive fresh with a
+                        guarantee that it was never previously
+                        frozen. We only ship today’s catch to ensure the best
+                        tasting lobster you’ve ever had. It will come in a
+                        chilled cooler ready to be grilled, baked, or fried!
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <div>
+
+        </div>
+    </form>
+</div>
+<div id="Checkout" style="display: none;">
+
+    <h2 style="margin-left: 2%;">Tell us where to lob your lobster!</h2>
+
+    <div class="shipping">
+        <div>
+            <p>Name</p>
+            <input type="text" size="30"
+                   oninput="setName(this.value); updateCart()"/>
+            <span class="error" id="name"></span>
+        </div>
+
+        <div>
+            <br/>
+            Street Address
+            <br/>
+            <span style="font-size: 0.8em; text-indent: 15px;">Line 1</span>
+
+            <br/><input type="text" size="35" maxlength="25"
+                        oninput="setAddressLine1(this.value); updateCart()"/>
+            <span class="error" id="addressLine1"></span><br/>
+
+            <span style="font-size: 0.8em; text-indent: 15px;">Line 2</span><br/>
+
+            <input type="text" size="35" maxlength="25"
+                   oninput="setAddressLine2(this.value); updateCart()"/>
+            <span class="error" id="addressLine2"></span>
+        </div>
+        <div>
+            <p>ZIP</p>
+            <input type="text" size="8" maxlength="5"
+                   oninput="setZIP(this.value); updateCart()"/>
+            <span class="error" id="ZIP1"></span>
+            <span class="error" id="ZIP2"></span>
+            <span class="error" id="ZIP3"></span>
+        </div>
+        <div>
+            <p>State</p>
+            <input type="text" size="3" maxlength="2"
+                   oninput="setState(this.value); updateCart()"
+                   onchange="calculateTotal()"/>
+            <span class="error" id="state"></span>
+        </div>
+        <div>
+            <p>Phone Number</p>
+            <input type="text" size="23" maxlength="12"
+                   oninput="setPhone(this.value); updateCart()"/>
+            <span class="error" id="phone"></span>
+        </div>
+        <div>
+            <p>Credit Card</p>
+            <select>
+                <option>Visa</option>
+                <option>MasterCard</option>
+                <option>American Express</option>
+                <option>Diner's Club</option>
+            </select>
+        </div>
+        <div>
+            <input type="text" size="35" maxlength="19"
+                   oninput="setCreditCard(this.value)"/>
+            <span class="error" id="card1"></span>
+            <span class="error" id="card2"></span>
+            <span class="error" id="card3"></span>
+        </div>
+        <p>
+            <button type="button"
+                    onclick="show('Receipt','Checkout', 'Shop', 'Home');"/>
+            Submit Order
+            </button>
+        </p>
+    </div>
+    <div id="shoppingCart">
+        <aside> <!--side panel with pricing, shipping, subtotals-->
+            <h2>Items in Cart</h2>
+            <p>
+                <span id="cart1"></span>
+                <span id="cart2"></span>
+                <span id="cart3"></span>
+                <span id="cart4"></span>
+                <span id="shippingCharge"></span>
+                <span id="empty"></span>
+            </p>
+            <p>
+                <span id="total"></span>
+            </p>
+        </aside>
+    </div>
+</div>
+<div id="Receipt" style="display: none">
+    <p>
+        <span style="font-size: 150%">Thank you for your order.</span>
+    </p>
+    <p>
+        You'll get your fresh lobster tomorrow. Enjoy!
+    </p>
+</div>
+</body>
+</html>

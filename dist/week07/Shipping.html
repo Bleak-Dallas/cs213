@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Luscious Lobster</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script type="text/javascript" src="Week07.js"></script>
+    <img id="logo" src="lobster_logo.jpg">
+    <div id="nav">
+        <div id="nav_wrapper">
+            <ul>
+                <li><a href="Week07.html">Home</a></li>
+                <li><a href="Shop.html">Shop</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </div>
+        <!-- Nav wrapper end -->
+    </div>
+    <!-- Nav end -->
+</head>
+<body id="Shipping">
+
+<h2 style="margin-left: 2%;">Tell us where to lob your lobster!</h2>
+
+<div class="checkOut">
+    <div>
+        <p>Name</p>
+        <input type="text" size="30" oninput="setName(this.value), cart()"/>
+        <span class = "error" id="name" style="color:red;"></span>
+    </div>
+
+    <div>
+        <p></p>
+        Street Address
+        </br>
+        <span style="font-size: 0.8em; text-indent: 15px;">Line 1</span>
+
+        </br><input type="text" size="35" maxlength="25" oninput="setAddressLine1(this.value), cart()"/>
+        <span class = "error" id="addressLine1" style="color:red;"></span></br>
+
+        <span style="font-size: 0.8em; text-indent: 15px;">Line 2</span></br>
+
+        <input type="text" size="35" maxlength="25" oninput="setAddressLine2(this.value), cart()"/>
+        <span class = "error" id="addressLine2" style="color:red;"></span>
+    </div>
+    <div>
+        <p>ZIP</p>
+        <input type="text" size="8" maxlength="5" oninput="setZIP(this.value), cart()"/>
+        <span class = "error" id="ZIP1" style="color:red;"></span>
+        <span class = "error" id="ZIP2" style="color:red;"></span>
+        <span class = "error" id="ZIP3" style="color:red;"></span>
+    </div>
+    <div>
+        <p>State</p>
+        <input type="text" size="3" maxlength="2" oninput="setState(this.value), cart()" onchange="calculateTotal()"/>
+        <span class = "error" id="state" style="color:red;"></span>
+    </div>
+    <div>
+        <p>Phone Number</p>
+        <input type="text" size="23" maxlength="12" oninput="setPhone(this.value), cart()"/>
+        <span class = "error" id="phone" style="color:red;"></span>
+    </div>
+    <div>
+        <p>Credit Card</p>
+        <select>
+            <option>Visa</option>
+            <option>MasterCard</option>
+            <option>American Express</option>
+            <option>Diner's Club</option>
+        </select>
+    </div>
+    <div>
+        <input type="text" size="35" maxlength="19" oninput="setCreditCard(this.value)"/>
+        <span class = "error" id="card1" style="color:red;"></span>
+        <span class = "error" id="card2" style="color:red;"></span>
+        <span class = "error" id="card3" style="color:red;"></span>
+    </div>
+</div>
+<div>
+    <aside> <!--side panel with pricing, shipping, subtotals-->
+        <h2>Items in Cart</h2>
+        <p>
+            <span id="cart1" class="cart"></span>
+            <span id="cart2" class="cart"></span>
+            <span id="cart3" class="cart"></span>
+            <span id="cart4" class="cart"></span>
+        </p>
+    </aside>
+</div>
+
+
+<div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+    display: block;
+}
+#logo {
+    max-width: 18%;
+    display: block;
+    margin: auto;
+    padding: 1%;
+}
+#nav {
+    background-color: #141c5b;
+    margin-top: 15px
+}
+#nav_wrapper {
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+#nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    min-width: 200px;
+    display:inline-block;
+}
+#nav ul li {
+    display: inline-block;
+}
+
+#nav ul li:hover {
+    background-color: #1d2e9f;
+}
+#nav ul li a {
+    color: white;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+
+article {
+    margin-left: 2%;
+    margin-bottom: 5%;
+    float: left;
+    width: 60%;
+}
+aside {
+    margin-right: 2%;
+    float: right;
+    width: 30%;
+}
+
+table {
+    text-align: center;
+    padding: 50px;
+    margin: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#submitOrder {
+    margin:auto;
+    display: block;
+}
+
+.shipping {
+    margin-bottom: 2%;
+    margin-left: 2%;
+    float: left;
+    display: block;
+    padding: 10px;
+}
+
+span.error {
+    display: block;
+    font-size: 0.65em;
+    color: red;
+}
+
+#shoppingCart h2 {
+    text-align: left;
+}
+#shoppingCart span {
+    text-align: right;
+    display: block;
+    color: black;
+    padding-right: 50%;
+}
+
+#total {
+    font-size: 110%;
+    font-weight: bold;
+}
+
+.description {
+    display: block;
+    text-align: left;
+}
+
+.description span {
+    font-size: 85%;
+}
+
+#Shop img {
+    max-width: 50%;
+}
+
+#Receipt p{
+    display:block;
+    font-size: 175%;
+    color: darkBlue;
+    text-align: center;
+}
+
+#Shop button {
+    visibility: hidden;
+}

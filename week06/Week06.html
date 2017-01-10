@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head></head>
+
+<body>
+<script type="text/javascript" src="week06.js"></script>
+<h2>#1: Age</h2>
+<p>Please indicate your age: 0-118 years</p>
+
+<div>
+    <input type="text" size="10" onInput="validateAge(this.value, 'age1')"/>
+    <span id="age1" style="color:red;">No age has been entered.</span>
+</div>
+<div>
+    <input type="text" size="10" onInput="validateAge(this.value, 'age2')"/>
+    <span id="age2" style="color:red;">No age has been entered.</span>
+</div>
+
+
+<h2>#2: SSN</h2>
+<p>Please enter a Social Security Number: 000-00-0000</p>
+
+<div>
+    <input type="text" size="10" onInput="validateSSN(this.value, 'ssn1')"/>
+    <span id="ssn1" style="color:red;">No SSN has been entered.</span>
+</div>
+<div>
+    <input type="text" size="10" onInput="validateSSN(this.value, 'ssn2')"/>
+    <span id="ssn2" style="color:red;">No SSN has been entered.</span>
+</div>
+
+
+
+<h2>#3: Credit Card Number</h2>
+<p>Please enter a credit card number: 0000 0000 0000 0000</p>
+
+<div>
+    <input type="text" size="10" onInput="validateCard(this.value, 'card1')"/>
+    <span id="card1" style="color:red;">No credit card number has been entered.</span>
+</div>
+<div>
+    <input type="text" size="10" onInput="validateCard(this.value, 'card2')"/>
+    <span id="card2" style="color:red;">No credit card number has been entered.</span>
+</div>
+
+
+<h2>#4: Date</h2>
+<p>Please enter a date: m/d/yyyy</p>
+
+<div>
+    <input type="text" size="10" onInput="validateDate(this.value, 'date1')"/>
+    <span id="date1" style="color:red;">No date has been entered.</span>
+</div>
+<div>
+    <input type="text" size="10" onInput="validateDate(this.value, 'date2')"/>
+    <span id="date2" style="color:red;">No date has been entered.</span>
+</div>
+
+
+<h2>#5: State Abbreviation</h2>
+<p>Please enter a 2-letter state abbreviation</p>
+
+<div>
+    <input type="text" size="10" onInput="validateState(this.value, 'state1')"/>
+    <span id="state1" style="color:red;">No state abbreviation has been entered.</span>
+</div>
+<div>
+    <input type="text" size="10" onInput="validateState(this.value, 'state2')"/>
+    <span id="state2" style="color:red;">No state abbreviation has been entered.</span>
+</div>
+
+
+<h2>#6: Dollar Amount</h2>
+<p>Please enter an amount in US dollars</p>
+
+<div>
+    <input type="text" size="10" onInput="validateMoney(this.value, 'money1')"/>
+    <span id="money1" style="color:red;">No money amount has been entered.</span>
+</div>
+<div>
+    <input type="text" size="10" onInput="validateMoney(this.value, 'money2')"/>
+    <span id="money2" style="color:red;">No money amount has been entered.</span>
+</div>
+
+
+</body>
+
+</html>
